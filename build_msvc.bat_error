@@ -1,0 +1,37 @@
+@echo off
+setlocal enabledelayedexpansion
+
+rem =========================
+rem  VS環境をロード（x86）
+rem =========================
+set FOUND_VCVARS=
+for %%P in (
+  "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools\VC\Auxiliary\Build\vcvars32.bat"
+  "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat"
+  "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars32.bat"
+  "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars32.bat"
+) do (
+  if exist %%~fP (
+    set "FOUND_VCVARS=%%~fP"
+    goto :FOUND
+  )
+)
+
+echo [ERROR] vcvars32.bat が見つかりません
+exit /b 1
+
+:FOUND
+call "%FOUND_VCVARS%" || exit /b 1
+
+rem cl が見えるか確認
+where cl || exit /b 1
+
+rem =========================
+rem  コンパイルのみ（/c）でOK
+rem  ※/showIncludes で include を同期に拾わせる
+rem =========================
+cl /nologo /TC /c /W3 /MD /Zi /showIncludes qac_gui_sample.c
+if errorlevel 1 exit /b 1
+
+rem 成功で 0 を返す（同期は 0 でないと失敗扱い）
+exit /b 0

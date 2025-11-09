@@ -1,0 +1,13 @@
+[
+    {
+        "generated_cct_c": "C:\\Users\\itoke\\AppData\\Local\\Perforce\\QAC-2025.3\\config\\cct\\generated_cct_C.cct"
+    },
+    {
+        "arguments": [
+            "cl.exe"
+        ],
+        "directory": "C:\\Users\\itoke\\Project_Cusor\\Project_Helix_QAC",
+        "file": "qac_gui_sample.c",
+        "target": "C"
+    }
+]

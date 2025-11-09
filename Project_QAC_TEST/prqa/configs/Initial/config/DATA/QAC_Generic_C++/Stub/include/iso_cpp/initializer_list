@@ -1,0 +1,39 @@
+#ifndef __QAC_INCLUDE_initializer_list__
+#define __QAC_INCLUDE_initializer_list__
+
+// Some flags to control how closely the standard is followed
+#include <qac_config.h>
+
+#include <cstddef>
+
+__QAC_BEGIN_NAMESPACE
+
+template<class E> class initializer_list
+{
+public:
+  typedef E value_type;
+  typedef const E& reference;
+  typedef const E& const_reference;
+  typedef size_t size_type;
+  typedef const E* iterator;
+  typedef const E* const_iterator;
+
+  constexpr initializer_list() noexcept : b {}, s { }  { }
+
+  constexpr size_t size() const noexcept { return s ; }      // number of elements
+  constexpr const E* begin() const noexcept { return b; } ;  // first element
+  constexpr const E* end() const noexcept { return b + s ; } // one past the last element
+
+private:
+  constexpr initializer_list(const value_type *b, size_type s) noexcept : b { b }, s { s } { }
+  const value_type * b;
+  size_t s;
+};
+
+// 18.9.3 initializer list range access
+template<class E> constexpr const E* begin(initializer_list<E> il) noexcept { return il.begin (); }
+template<class E> constexpr const E* end(initializer_list<E> il) noexcept { return il.end (); }
+
+__QAC_END_NAMESPACE
+
+#endif

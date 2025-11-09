@@ -1,0 +1,90 @@
+#pragma once
+
+#include <qac_config.h>
+#include <chrono>
+
+__QAC_BEGIN_NAMESPACE
+
+class shared_mutex {
+public:
+  typedef class __qacpp_shared_mutex_native_handle native_handle_type;
+
+  shared_mutex();
+  ~ shared_mutex();
+  shared_mutex(const shared_mutex&) = delete;
+  shared_mutex& operator=(const shared_mutex&) = delete;
+
+  // Exclusive ownership
+  void lock();                  // blocking
+  bool try_lock();
+  void unlock();
+
+  // Shared ownership
+  void lock_shared();           // blocking
+  bool try_lock_shared();
+  void unlock_shared();
+
+  native_handle_type native_handle();
+};
+
+class shared_timed_mutex {
+public:
+  typedef class __qacpp_shared_timed_mutex_native_handle native_handle_type;
+
+  shared_timed_mutex();
+  ~ shared_timed_mutex();
+  shared_timed_mutex(const shared_timed_mutex&) = delete;
+  shared_timed_mutex& operator=(const shared_timed_mutex&) = delete;
+
+  // Exclusive ownership
+  void lock();
+
+  // blocking
+  bool try_lock();
+  template <class Rep, class Period>
+  bool try_lock_for(const chrono::duration<Rep, Period>& rel_time);
+  template <class Clock, class Duration>
+  bool try_lock_until(const chrono::time_point<Clock, Duration>& abs_time);
+  void unlock();
+
+  // Shared ownership
+  void lock_shared();           // blocking
+  bool try_lock_shared();
+  template <class Rep, class Period>
+  bool try_lock_shared_for(const chrono::duration<Rep, Period>& rel_time);
+  template <class Clock, class Duration>
+  bool try_lock_shared_until(const chrono::time_point<Clock, Duration>& abs_time);
+
+  void unlock_shared();
+};
+
+template <class Mutex> class shared_lock
+{
+public:
+  shared_lock () noexcept;
+
+  explicit shared_lock ( Mutex & );
+  shared_lock ( Mutex &, defer_lock_t ) noexcept;
+  shared_lock ( Mutex &, try_to_lock_t );
+  shared_lock ( Mutex &, adopt_lock_t );
+
+  shared_lock ( shared_lock && __sl ) noexcept;
+  shared_lock ( shared_lock const & ) = delete;
+  shared_lock & operator= ( shared_lock const & ) = delete;
+  shared_lock & operator= ( shared_lock && ) noexcept;
+
+  ~shared_lock ();
+
+  void lock ();
+  void unlock ();
+  bool try_lock ();
+  bool owns_lock () const noexcept;
+  void swap ( shared_lock & ) noexcept;
+
+  Mutex * release () noexcept;
+  Mutex * mutex () const noexcept;
+
+  explicit operator bool () const noexcept;
+};
+
+__QAC_END_NAMESPACE

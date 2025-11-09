@@ -1,0 +1,101 @@
+#ifndef __QAC_INCLUDE_thread__
+#define __QAC_INCLUDE_thread__
+
+// Some flags to control how closely the standard is followed
+#include <qac_config.h>
+
+#include <chrono>
+
+__QAC_BEGIN_NAMESPACE
+
+class thread {
+public:
+  class id;
+
+  typedef class __qacpp_thread_native_handle * native_handle_type;
+
+  thread() noexcept;
+
+  template <class F, class ... Args>
+  explicit thread(F&& f, Args&&... args);
+  ~thread();
+  thread(const thread&) = delete;
+  thread(thread&&) noexcept;
+  thread& operator=(const thread&) = delete;
+  thread& operator=(thread&&) noexcept;
+
+  // members:
+  void swap(thread&) noexcept;
+  bool joinable() const noexcept;
+  void join();
+  void detach();
+  id get_id() const noexcept;
+  native_handle_type native_handle();
+
+  // static members:
+  static unsigned hardware_concurrency() noexcept;
+};
+
+void swap(thread & x, thread & y) noexcept;
+
+namespace this_thread {
+  thread::id get_id() noexcept;
+
+  void yield() noexcept;
+
+  template <class Clock, class Duration>
+  void sleep_until(const chrono::time_point<Clock, Duration>& abs_time);
+
+  template <class Rep, class Period>
+  void sleep_for(const chrono::duration<Rep, Period>& rel_time);
+}
+
+class stop_token
+{
+public:
+  bool stop_possible () const noexcept;
+  bool stop_requested () const noexcept;
+};
+
+class stop_source
+{
+public:
+  bool request_stop() noexcept;
+};
+
+class jthread {
+public:
+  class id;
+
+  typedef class __qacpp_thread_native_handle * native_handle_type;
+
+  jthread() noexcept;
+
+  template <class F, class ... Args>
+  explicit jthread(F&& f, Args&&... args);
+  ~jthread();
+  jthread(const thread&) = delete;
+  jthread(thread&&) noexcept;
+  jthread& operator=(const thread&) = delete;
+  jthread& operator=(thread&&) noexcept;
+
+  // members:
+  void swap(jthread&) noexcept;
+  bool joinable() const noexcept;
+  void join();
+  void detach();
+  id get_id() const noexcept;
+  native_handle_type native_handle();
+
+  std::stop_source get_stop_source() noexcept;
+  std::stop_token get_stop_token() const noexcept;
+  bool request_stop() noexcept;
+
+  // static members:
+  static unsigned hardware_concurrency() noexcept;
+};
+
+
+__QAC_END_NAMESPACE
+
+#endif

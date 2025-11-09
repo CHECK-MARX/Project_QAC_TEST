@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acf xmlversion="2.0.0">
+  <components>
+    <component name="qac" target="C" version="12.2.0"/>
+    <component name="qacpp" target="C++" version="7.2.0"/>
+    <component name="certccm" target="C" version="4.2.0"/>
+    <component name="cweccm" target="C" version="4.2.0"/>
+    <component name="m2cm" target="C" version="6.2.0"/>
+    <component name="m3cm" target="C" version="6.2.0"/>
+    <component name="mc25cm" target="C" version="1.2.0"/>
+    <component name="secccm" target="C" version="4.2.0"/>
+    <component name="dataflow" target="C_CPP" version="2.2.0"/>
+    <component name="mta" target="C_CPP" version="5.2.0"/>
+    <component name="rcma" target="C_CPP" version="5.2.0"/>
+  </components>
+  <component_settings>
+    <input_to component="qac" target="C" version="12.2.0">
+      <option name="-enabledataflow" argument="-"/>
+      <option name="-encoding " argument="UTF-8"/>
+    </input_to>
+  </component_settings>
+</acf>

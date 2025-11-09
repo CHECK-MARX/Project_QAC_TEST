@@ -1,0 +1,303 @@
+﻿* ===[ SOURCE FILE ]===
+* ===[ CIP FILE CONTENT ]===
+-i "${QAC_SOURCE_ROOT}\prqa\configs\Initial\config\DATA\MS_VS_2019_x86_C\Stub\forceinclude"
+-q "${QAC_SOURCE_ROOT}\prqa\configs\Initial\config\DATA\MS_VS_2019_x86_C\Stub\forceinclude"
+-fi "${QAC_SOURCE_ROOT}\prqa\configs\Initial\config\DATA\MS_VS_2019_x86_C\Stub\forceinclude\limits_fi.h"
+-fi "${QAC_SOURCE_ROOT}\prqa\configs\Initial\config\DATA\MS_VS_2019_x86_C\Stub\forceinclude\pragma_fi.h"
+-fi "${QAC_SOURCE_ROOT}\prqa\configs\Initial\config\DATA\MS_VS_2019_x86_C\Stub\forceinclude\restrict_fi.h"
+-fi "${QAC_SOURCE_ROOT}\prqa\configs\Initial\config\DATA\MS_VS_2019_x86_C\Stub\forceinclude\stdint_fi.h"
+-sd"_MSC_FULL_VER=192930133"
+-sd"_MSC_VER=1929"
+-sd"WindowsSDKVersion=10.0.19041.0\"
+-si "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include"
+-q "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\include"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\ndis"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\ndis"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx\shared"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx\shared"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx\shared\1.0"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx\shared\1.0"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx\shared\1.0\net"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared\netcx\shared\1.0\net"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\alljoyn_c"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\alljoyn_c"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\gl"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\gl"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\qcc"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\qcc"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winsqlite"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\winsqlite"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\qcc\windows"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um\qcc\windows"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt\wrl"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt\wrl"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt\wrl\wrappers"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt\wrl\wrappers"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt\winrt"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt\winrt"
+-si "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt\winrt\impl"
+-q "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt\winrt\impl"
+-si "C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.19041.0"
+-q "C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.19041.0"
+-si "C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0"
+-q "C:\Program Files (x86)\Windows Kits\10\References\10.0.19041.0"
+* ===[ ACF INCLUDES ]===
+* ===[ PROJECT SETTINGS  ]===
+* ===[ PROJECT INCLUDES ]===
+* ===[ PROJECT DEFINES ]===
+* ===[ PROJECT OPTIONS ]===
+* ===[ CCT FILE CONTENT (generated_cct_C.cct) ]===
+*{
+* "PLATFORM" : "PLATFORM_WIN32",
+* "COMPILER_HIERARCHY" : "Microsoft_Visual_Studio",
+* "COMPILER_NAME": "Visual_C++_2019",
+* "COMPILER_VERSION": "19-2",
+* "HOST": "x86",
+* "TARGET": "x86",
+* "SOURCE_LANGUAGE": "C",
+* "COMPILER_CMD": "cl.exe",
+* "COMPILER_ADDITIONAL_ARGS" : ["/nologo","/utf-8","/c","/W3","/MD","/Zi","/showIncludes"],
+* "ADDITIONAL_INCLUDES": "DATA/MS_VS_2019_x86_C/Stub",
+* "INCLUDE_LIST" : [
+*    {"INCLUDE_STRUCTURE": {
+*       "INCLUDE_TYPE": "MasterScript",
+*       "INCLUDE_VALUE": "DATA/common/msvc.py"
+*      }
+*    },
+*    {"INCLUDE_STRUCTURE": {
+*       "INCLUDE_TYPE": "HelperScript",
+*       "INCLUDE_VALUE": "DATA/core_qaf/qaf.py"
+*      }
+*    }],
+*  "SYNCHRONISATION" : {
+*    "FILE_FILTER":"stdafx.c,pch.c",
+*    "INCLUDE_FLAGS":"/I",
+*    "DEFINE_FLAGS":"/D",
+*    "SETTINGS_FILE_OPTIONS": {
+*      "FLAG":"@",
+*      "EXTENSION":".rsp",
+*      "LITERAL_QUOTES":"true"
+*     }
+*   }
+* }
+
+* Generated by Auto CCT version: 2025.3
+
+
+* compiler behavior
+-fpc+
+-ex c++
+-ex dollar
+-ar+
+-ex asm
+-xc-
+-bits+
+-sl-
+-ex longlong
+-xn 31
+
+* parsing extensions
+
+* CIP replacement
+
+* preprocessor symbol definitions
+-sd __alignof="1 prl_ignore_paren"
+-sd _asm="asm"
+-sd __asm="asm"
+-sd __assume=""
+-sd __COUNTER__="0"
+-sd _CRT_WIDE_(s)="L\"\" s"
+-sd __declspec="_ignore_paren"
+-sd _declspec="_ignore_paren"
+-sd _DLL="1"
+-sd __except="_ignore_paren"
+-sd __finally=""
+-sd __forceinline=""
+-sd __FUNCDNAME__="_PRL_STRINGIFY(__QAC_FUNCTION__)"
+-sd __FUNCSIG__="_PRL_STRINGIFY(__QAC_FUNCSIG__)"
+-sd __FUNCTION__="_PRL_STRINGIFY(__FUNCTION__)"
+-sd __has_nothrow_assign=""
+-sd __has_nothrow_constructor=""
+-sd __has_nothrow_copy=""
+-sd __has_nothrow_move_assign=""
+-sd __has_trivial_assign=""
+-sd __has_trivial_constructor=""
+-sd __has_trivial_destructor=""
+-sd __has_trivial_move_assign=""
+-sd __has_trivial_move_constructor=""
+-sd __has_virtual_destructor=""
+-sd __identifier=""
+-sd _inline="inline"
+-sd __inline="inline"
+-sd inline="_ignore_modification"
+-sd _INTEGRAL_MAX_BITS="64"
+-sd __interface=""
+-sd __is_abstract=""
+-sd __is_base_of=""
+-sd __is_class=""
+-sd __is_constructible=""
+-sd __is_convertible_to=""
+-sd __is_empty=""
+-sd __is_enum=""
+-sd __is_final=""
+-sd __is_literal_type=""
+-sd __is_nothrow_constructible=""
+-sd __is_pod=""
+-sd __is_polymorphic=""
+-sd __is_ref_class=""
+-sd __is_standard_layout=""
+-sd __is_trivial=""
+-sd __is_trivially_copyable=""
+-sd __is_union=""
+-sd __is_value_class=""
+-sd __leave=""
+-sd _M_IX86="600"
+-sd _M_IX86_FP="2"
+-sd _MSC_BUILD="0"
+-sd _MSC_EXTENSIONS="1"
+-sd _MSC_FULL_VER="192930159"
+-sd _MSC_VER="1929"
+-sd _MT="1"
+-sd __pragma="_ignore_paren"
+-sd prl_ignore_paren="_ignore_paren"
+-sd _prl_null_expression="0 prl_ignore_paren"
+-sd _PRL_STRINGIFY(x)="#x"
+-sd __section="_ignore_paren"
+-sd __sptr=""
+-sd static_assert=""
+-sd __STDC_HOSTED__="1"
+-sd __try=""
+-sd __unaligned=""
+-sd __underlying_type=""
+-sd __uptr=""
+-sd _uuidof=""
+-sd __uuidof=""
+-sd _VARIANT_BOOL="VARIANT_BOOL"
+-sd _WIN32="1"
+
+* intrinsic types
+-it ptrdiff_t="signed int"
+-it size_t="unsigned int"
+-it wchar_t="unsigned short"
+
+* basic type size and alignment
+-s char=8
+-a char=1
+-s double=64
+-a double=8
+-s float=32
+-a float=4
+-s int=32
+-a int=4
+-s ldouble=64
+-a ldouble=8
+-s long=32
+-a long=4
+-s longlong=64
+-a longlong=8
+-s short=16
+-a short=2
+
+* GNU type mode helpers
+* common parser options
+* calling conventions
+-sd __cdecl=
+-sd cdecl="__cdecl"
+-sd _cdecl="__cdecl"
+-sd __clrcall=
+-sd __fastcall=
+-sd _fastcall=
+-sd _oldcall=
+-sd __oldcall=
+-sd _stdcall=
+-sd __stdcall=
+-sd _syscall=
+-sd __syscall=
+-sd __thiscall=
+-sd _vectorcall=
+-sd __vectorcall=
+* calls
+* types
+-sd __int16="short"
+-sd __int32="int"
+-sd __int64="unsigned long long"
+-sd __int8="char"
+-sd __ptr32=
+-sd __ptr64=
+-sd __w64=
+* win
+
+* qac parser options
+-encoding utf-8
+* ===[ DEPENDENCY SETTINGS ]===
+-po "extension::header=['h','c',''] "
+-nrf C:\Perforce\CWECCM-4.2.0\compulsory_config\cweccm.ncf
+* ===[ ACTIVE MESSAGES ]===
+-o 1561
+-o 1562
+-o 1563
+-o 1564
+-o 1565
+-o 1566
+-o 1568
+-o 1569
+-o 1570
+-o 1571
+-o 1572
+-o 1573
+-o 1574
+-o 1575
+-o 1576
+-o 1577
+-o 1578
+-o 1579
+-o 1580
+-o 1581
+-o 1582
+-o 1585
+-o 1586
+-o 1590
+-o 1592
+-o 1593
+-o 1594
+-o 1598
+-o 1599
+-o 5001
+-o 5002
+-o 5003
+-o 5004
+-o 5005
+-o 5006
+-o 5007
+-o 5008
+-o 5009
+-o 5010
+-o 5011
+-o 5012
+-o 5013
+-o 5014
+-o 5015
+-o 5016
+-o 5017
+-o 5018
+-o 5019
+-o 5020
+-o 5021
+-o 5022
+-o 5023
+-o 5100
+-o 5101

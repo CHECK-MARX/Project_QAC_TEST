@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This file is API generated -->
+<settings version="2">
+ <setting name="create_CCT" value="yes"/>
+ <setting name="last_config" value="Initial"/>
+ <setting name="sync_command" value=""/>
+ <setting name="sync_custom_mnemonics" value=""/>
+ <setting name="sync_details" value="C:\Users\itoke\Project_Cusor\Project_Helix_QAC\bulid_msvc.bat"/>
+ <setting name="sync_optimize" value="no"/>
+ <setting name="sync_run_analysis" value="no"/>
+ <setting name="sync_target" value=""/>
+ <setting name="sync_type" value="INJECT"/>
+ <setting name="sync_working_directory" value="C:\Users\itoke\Project_Cusor\Project_Helix_QAC"/>
+ <component_directories/>
+ <root_paths/>
+ <editor_settings/>
+ <analysis_settings/>
+ <file_tree_settings/>
+ <log_settings/>
+ <feedback_settings/>
+ <license_servers/>
+</settings>
